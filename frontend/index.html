@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manufacturing Downtime Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Manufacturing Downtime Prediction</h1>
+    <section>
+        <h2>Upload CSV</h2>
+        <input type="file" id="csvFile" accept=".csv">
+        <button onclick="uploadCSV()">Upload</button>
+    </section>
+    <section>
+        <h2>Predict Downtime</h2>
+        <form id="predictForm">
+            <label>Temperature: <input type="number" id="temperature" required></label>
+            <label>Run Time: <input type="number" id="runtime" required></label>
+            <button type="submit">Predict</button>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
